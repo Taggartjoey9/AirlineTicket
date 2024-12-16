@@ -1,16 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
+    background-color: #d9e4f1;
     margin: 0;
     font-family: "Noto Sans", sans-serif;
-    border: solid black 1px;
+    /*border: solid black 1px;*/
+    
 }
 
-.nav-container {
+.header-nav {
     display: flex;
+}
+
+.header-left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 33%;
+    height: 100px;
+}
+
+img {
+    height: 60px;
+    width: 60px;
+}
+
+.header-image {
+    width: 55px;
+    height: 55px;
 }
 
 .nav-items {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.delta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.american {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.united {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.southwest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
