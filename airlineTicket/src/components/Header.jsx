@@ -7,19 +7,19 @@ export default function Header() {
             </div>
               <ul className="nav-items">
                 <div className="delta">
-                    <img src="Delta.png" alt="" />
+                    <img className="nav-image" src="Delta.png" alt="" />
                     <li>Delta Airlines</li>
                 </div>
                 <div className="american">
-                    <img src="AA.png" alt="" />
+                    <img className="nav-image" src="AA.png" alt="" />
                     <li>American Airlines</li>
                 </div>
                 <div className="united">
-                    <img src="United.png" alt="" />
+                    <img className="nav-image" src="United.png" alt="" />
                     <li>United Airlines</li>
                 </div>
                 <div className="southwest">
-                    <img src="SW.png" alt="" />
+                    <img className="nav-image" src="SW.png" alt="" />
                     <li>Southwest Airlines</li>
                 </div>
               </ul>

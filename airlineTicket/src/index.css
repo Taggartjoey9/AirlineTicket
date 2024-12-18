@@ -8,6 +8,7 @@
     
 }
 
+/* Header Styles */
 .header-nav {
     display: flex;
 }
@@ -16,18 +17,13 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 33%;
+    width: 40%;
     height: 100px;
 }
 
 img {
-    height: 60px;
-    width: 60px;
-}
-
-.header-image {
-    width: 55px;
-    height: 55px;
+    height: 50px;
+    width: 50px;
 }
 
 .nav-items {
@@ -35,7 +31,13 @@ img {
     display: flex;
     list-style-type: none;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding-right: 40px;
+}
+
+.nav-image {
+    height: 30px;
+    width: 30px;
 }
 
 .delta {
@@ -60,4 +62,58 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* CTA Container */
+
+.cta-container {
+    display: flex;
+    height: 400px;
+    box-shadow: 5px 10px 40px #888888;
+}
+
+.cta-container-left {
+    width: 50%;
+}
+
+.cta-container-right {
+    width: 50%;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px 0px 0px 10px;
+        }
+}
+
+/* Destination Cards */
+
+.main-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    flex-wrap: wrap;
+
+}
+
+.card-container {
+    height: 70%;
+    width: 255px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 50px #888888;
+    transition: all .3s ease-in;
+}
+
+.card-container:hover {
+    transition: all .3s ease-out;
+    transform: scale(1.1);
+}
+
+.card-header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
 }
