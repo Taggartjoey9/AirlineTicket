@@ -3,7 +3,7 @@ export default function Header() {
         <header className="header-nav">
             <div className="header-left">
                 <h1>Airline Tickets</h1>
-                <img src="./main-logo.png" alt="airplane image" />
+                <img src="./Legacy.png" alt="airplane image" />
             </div>
               <ul className="nav-items">
                 <div className="delta">
