@@ -1,3 +1,5 @@
+import SearchBtn from './SearchBtn.jsx'
+
 export default function TicketInputFields() {
     return (
         <>
@@ -6,7 +8,7 @@ export default function TicketInputFields() {
             <input></input>
             <input type="date"></input>
             <input type="date"></input>
-            <button>Search</button>
+            <SearchBtn />
         </>
     )
 }
