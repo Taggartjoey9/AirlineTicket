@@ -1,13 +1,28 @@
+import { createPortal } from 'react-dom';
+import SearchBtn from './SearchBtn';
 
-// eslint-disable-next-line react/prop-types
-export default function Modal({ closeModal}) {
+export default function Modal({ setIsOpen }) {
+
+    function handleClose() {
+        setIsOpen(false);
+    }
+
+
+
+    const mountElement = document.getElementById('overlays');
 
     return (
-        <section className="modal-container">
-            <div>No Flights Available</div>
-            <p>There are no flights currently with you search results. Contact an associate for better assistance</p>
-            <div>1-800-AirlineDirect</div>
-            <button onClick={() => closeModal(false) }>Close</button>
-        </section>
+            createPortal(
+            <>
+                <dialog className="modal-container">
+                    <div>No Flights Available</div>
+                    <p>There are no flights currently with you search results. Contact an associate for better assistance</p>
+                    <div>1-800-AirlineDirect</div>
+                    <button onClick={handleClose}>Close</button>
+                </dialog>
+            </>,
+              mountElement
+              
+        )
     )
 }

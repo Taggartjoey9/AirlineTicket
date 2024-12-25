@@ -3,12 +3,16 @@ import Modal from "./Modal";
 
 export default function SearchBtn() {
 
-    const [showModal, setShowModal] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
+    function handleOpen() {
+        setIsOpen(true);
+    }
+    
     return (
         <>
-          {showModal ? <Modal closeModal={setShowModal} /> : ""}
-          <div onClick={() => setShowModal(true)} className="search-modal">Seach</div>
+          <div onClick={handleOpen}className="search-modal">Seach</div>
+          {isOpen ? <Modal/> : ""}
         </>
     )
 }
