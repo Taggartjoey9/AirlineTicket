@@ -5,14 +5,10 @@ export default function SearchBtn() {
 
     const [showModal, setShowModal] = useState(false);
 
-
-    function toggleModal() {
-        console.log('hello')
-    }
-
     return (
         <>
-          <div onClick={toggleModal} className="search-modal">Seach</div>
+          {showModal ? <Modal closeModal={setShowModal} /> : ""}
+          <div onClick={() => setShowModal(true)} className="search-modal">Seach</div>
         </>
     )
 }
