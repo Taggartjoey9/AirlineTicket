@@ -4,7 +4,6 @@ import Cta from './components/Cta.jsx';
 import DestinationCards from './components/DestinationCards.jsx';
 import TicketCounter from './components/TicketCounter.jsx';
 
-
 function App() {
 
   
