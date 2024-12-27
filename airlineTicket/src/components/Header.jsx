@@ -2,8 +2,7 @@ export default function Header() {
     return (
         <header className="header-nav">
             <div className="header-left">
-                <h1>Airline Tickets</h1>
-                <img src="./Legacy.png" alt="airplane image" />
+                <img className="header-logo" src="./logo.png" alt="airplane image" />
             </div>
               <ul className="nav-items">
                 <div className="delta">
