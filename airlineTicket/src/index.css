@@ -72,30 +72,50 @@ body {
 
 .hero-container {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 100%;
     height: 500px;
-    border: solid white 1px;
 }
 
-.hero-text {
+.hero-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     height: 100%;
     width: 50%;
-    border: solid white 1px;
+    text-align: center;
+}
+
+.text-inner-content {
+    text-align: left;
+    width: 500px;
+        h1 {
+            font-size: 35px;
+        }
+            h4 {
+                font-weight: 400;
+            }
+                p {
+                    font-weight: 200;
+                }
+}
+
+
+.hero-text {
+    width: 50%;
 }
 
 .hero-image-container {
-    width: 50%;
+    width: -50%;
     height: 100%;
     display: flex;
-    border: solid white 1px;
-    margin-right: 5%;
-    background-color: red;
+    justify-content: center;
+    position: relative;
+    right: 100px;
 }
 
 .hero-image {
-    
+    padding: -10px;
 }
 
 /* CTA Container */
@@ -230,3 +250,5 @@ body {
             cursor: pointer;
         }
 }
+
+/* Weather Data Section */
