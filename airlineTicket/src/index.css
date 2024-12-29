@@ -71,6 +71,7 @@ body {
 /* Hero Section */
 
 .hero-container {
+    margin-top: 60px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -223,32 +224,49 @@ body {
     font-size: 32px;
 }
 
-.button-selectors {
-    
-}
-
-/* Search Modal */
-
-.search-modal {
-    cursor: pointer;
-}
-
-.modal-container {
-    text-align: center;
-    background-color: red;
-    width: 300px;
-    height: 300px;
-    border: solid black 1px;
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 9999;
-        button {
-            margin-top: 110px;
-            background-color: #5381E6;
-            cursor: pointer;
-        }
-}
-
 /* Weather Data Section */
+
+.weather-container {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.input-inner {
+    text-align: left;
+}
+
+.input-inner input {
+    border: none;
+}
+
+.weather-results-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 400px;
+    background-color: blue;
+}
+
+.departure-weather {
+    background-color: purple;
+    text-align: center;
+    width: 320px;
+    height: 95%;
+
+}
+
+.destination-weather {
+    background-color: green;
+    width: 320px;
+    height: 95%;
+}
