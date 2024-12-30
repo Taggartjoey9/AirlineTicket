@@ -1,4 +1,19 @@
+import { useEffect, useState } from 'react';
+
 export default function WeatherSelector() {
+
+    const [weatherData, setWeatherData] = useState([]);
+
+    const weatherAPI = async () => {
+        const response = await fetch('api.openweathermap.org')
+
+        setWeatherData(await response.json())
+    }
+
+    useEffect(() => {
+        weatherAPI()
+    }, [])
+
     return (
         <section className="weather-container">
             <div className="input-container">
@@ -13,7 +28,11 @@ export default function WeatherSelector() {
                 <div className="departure-weather">
                     <h2>Departure Current Weather</h2>
                     <div>New York, NY</div>
-                    <div>32°F</div>
+                    {weatherData.map((data) => {
+                        return (
+                            <div key={data.id}>{data.title}</div>
+                        )
+                    })}
                     <div>Sunny</div>
                     <div></div>
                 </div>
